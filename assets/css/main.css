@@ -2380,6 +2380,145 @@ html {
   width: 150px;
 }
 
+.offer-03 {
+  margin: 30px 0;
+}
+@media (max-width: 575.98px) {
+  .offer-03__left {
+    margin-top: 40px;
+  }
+}
+.offer-03__thumb-discount {
+  position: relative;
+}
+.offer-03__thumb {
+  margin-left: 160px;
+}
+@media (max-width: 1399.98px) {
+  .offer-03__thumb {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .offer-03__thumb {
+    width: 70%;
+  }
+}
+@media (max-width: 991.98px) {
+  .offer-03__thumb {
+    width: 100%;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .offer-03__thumb {
+    width: 350px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .offer-03__thumb {
+    width: 300px;
+  }
+}
+.offer-03__star {
+  position: absolute;
+  top: -94px;
+  left: 60px;
+}
+@media (max-width: 1399.98px) {
+  .offer-03__star {
+    left: 0;
+  }
+}
+@media (max-width: 1199.98px) {
+  .offer-03__star {
+    top: -50px;
+    left: 30px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .offer-03__star-icon {
+    width: 70%;
+  }
+}
+@media (max-width: 767.98px) {
+  .offer-03__star-icon {
+    width: 56%;
+  }
+}
+.offer-03__heading--star {
+  position: absolute;
+  width: 135px;
+  text-align: center;
+  color: var(--dark-color);
+  top: 60px;
+  left: 66px;
+}
+@media (max-width: 1199.98px) {
+  .offer-03__heading--star {
+    width: 100px;
+    font-size: 4.6rem;
+    top: 46px;
+    left: 42px;
+  }
+}
+@media (max-width: 767.98px) {
+  .offer-03__heading--star {
+    width: 100px;
+    font-size: 3.8rem;
+    top: 36px;
+    left: 24px;
+  }
+}
+.offer-03__right {
+  width: 470px;
+}
+@media (max-width: 1199.98px) {
+  .offer-03__right {
+    width: 400px;
+  }
+}
+@media (max-width: 767.98px) {
+  .offer-03__right {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .offer-03__right {
+    width: calc(100vw - 20px);
+  }
+}
+.offer-03__title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 125%;
+  text-transform: capitalize;
+}
+.offer-03__desc {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 162.5%;
+}
+.offer-03__btn {
+  color: var(--primary-color);
+  margin-top: 40px;
+  width: 100px;
+  padding: 4px 10px;
+  border-bottom: 1px solid var(--primary-color);
+  translate: 0;
+  transition: translate 0.2s;
+}
+.offer-03__btn:hover {
+  translate: 0 -4px;
+}
+@media (max-width: 991.98px) {
+  .offer-03__btn {
+    margin-top: 20px;
+  }
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -2899,6 +3038,11 @@ html {
   justify-content: center;
   gap: 20px;
 }
+@media (max-width: 991.98px) {
+  .countdown-04__item {
+    gap: 10px;
+  }
+}
 .countdown-04__icon {
   color: var(--primary-color);
 }
@@ -2920,7 +3064,7 @@ html {
 }
 @media (max-width: 991.98px) {
   .countdown-04__title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 .countdown-04__desc {

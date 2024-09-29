@@ -229,6 +229,10 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+
+        @include abstracts.screen(lg) {
+            gap: 10px;
+        }
     }
 
     &__icon {
@@ -252,7 +256,7 @@
         line-height: 133.333%;
 
         @include abstracts.screen(lg) {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
     }
 
