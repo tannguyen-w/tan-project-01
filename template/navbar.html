@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="navbar__content">
+        <!-- More -->
+        <button class="top-bar__more d-none d-lg-block js-toggle" toggle-target="#navbar__main">
+            <img src="./assets/icons/more.svg" alt="More" class="icon top-bar__more-icon" />
+        </button>
+
+        <!-- Logo -->
+        <a href="./" class="logo">
+            <img src="./assets/icons/logo.svg" alt="Quán nhậu Tự do" class="icon logo__img" />
+            <h1 class="logo__title">Tự Do</h1>
+        </a>
+
+        <div id="navbar__main" class="navbar__main hide">
+            <button class="navbar__close-btn js-toggle" toggle-target="#navbar__main">
+                <img class="icon" src="./assets/icons/arrow-left.svg" alt="Arrow left" />
+            </button>
+
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="./" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="#!" class="navbar__link">Menu</a></li>
+                <li class="navbar__item"><a href="#!" class="navbar__link">Blog</a></li>
+                <li class="navbar__item"><a href="#!" class="navbar__link">Pages</a></li>
+                <li class="navbar__item"><a href="#!" class="navbar__link">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar__overlay js-toggle" toggle-target="#navbar__main"></div>
+        <!-- Actions -->
+        <div class="top-act">
+            <a href="./sign-in.html" class="btn btn--text d-md-none">Sign in</a>
+            <a href="./sign-up.html" class="btn top-act__sign-up">Sign up</a>
+        </div>
+    </div>
+</div>

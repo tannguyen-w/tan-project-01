@@ -1,0 +1,45 @@
+@use "../abstracts";
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 46px;
+    padding: 0 20px;
+    max-width: 220px;
+
+    background: var(--button-bg);
+
+    white-space: nowrap;
+    user-select: none;
+
+    @include abstracts.screen(md) {
+        height: 40px;
+    }
+
+    &:hover {
+        background: var(--primary-color);
+    }
+
+    &--text {
+        background: transparent;
+
+        &:hover {
+            background: transparent;
+            color: var(--primary-color);
+        }
+
+        &-link {
+            color: var(--primary-color);
+        }
+    }
+
+    &--small {
+        width: 116px;
+    }
+
+    &--large {
+        width: 220px;
+    }
+}
