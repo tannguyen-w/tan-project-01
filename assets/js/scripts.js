@@ -227,3 +227,57 @@ window.addEventListener("template-loaded", () => {
 
 const isDark = localStorage.dark === "true";
 document.querySelector("html").classList.toggle("dark", isDark);
+
+// Hàm xử lý khi button được click
+function handleMenuButtonClick() {
+    // Lấy tất cả các nút trong menu
+    const buttons = $$(".menu-offer__btn");
+
+    // Lấy tất cả các menu list
+    const menuLists = $$(".menu-offer__list");
+
+    // Lặp qua các button và gán sự kiện click cho từng button
+    buttons.forEach((button, index) => {
+        button.onclick = () => {
+            // Xóa class active khỏi tất cả các button
+            buttons.forEach((btn) => btn.classList.remove("menu-offer__btn--active"));
+
+            // Thêm class active vào button hiện tại
+            button.classList.add("menu-offer__btn--active");
+
+            // Ẩn tất cả các menu list
+            menuLists.forEach((list) => list.classList.replace("d-block", "d-none"));
+
+            // Hiển thị menu list tương ứng với button được click
+            menuLists[index].classList.replace("d-none", "d-block");
+        };
+    });
+}
+
+// Khởi tạo sự kiện cho các button khi template được tải
+window.addEventListener("template-loaded", handleMenuButtonClick);
+
+// Gọi hàm ngay nếu template đã sẵn sàng
+handleMenuButtonClick();
+
+function handleProductDetailButtonClick() {
+    const buttons = $$(".product-detail__title");
+
+    const productDetailIndex = $$(".product-detail__index");
+
+    buttons.forEach((button, index) => {
+        button.onclick = () => {
+            buttons.forEach((btn) => btn.classList.remove("product-detail__cate--active"));
+
+            button.classList.add("product-detail__cate--active");
+
+            productDetailIndex.forEach((list) => list.classList.replace("d-block", "d-none"));
+
+            productDetailIndex[index].classList.replace("d-none", "d-block");
+        };
+    });
+}
+
+window.addEventListener("template-loaded", handleProductDetailButtonClick);
+
+handleProductDetailButtonClick();

@@ -355,6 +355,10 @@
             width: 430px;
         }
 
+        @include abstracts.screen(sm) {
+            width: 100%;
+        }
+
         @include abstracts.screen(md) {
             margin-top: 10px;
         }

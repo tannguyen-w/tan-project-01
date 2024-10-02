@@ -1,0 +1,98 @@
+<div class="container">
+    <div class="product-review">
+        <h3 class="product-review__title">Add A Review</h3>
+        <p class="product-review__desc">Your email address will not be published. Required fields are marked *</p>
+
+        <form action="user-review" class="form">
+            <div class="form__row">
+                <div class="form__group">
+                    <label for="username" class="form__label--medium">Your name*</label>
+                    <div class="form__text-input">
+                        <input
+                            type="text"
+                            name="username"
+                            id="username"
+                            placeholder="Input your name"
+                            class="form__input"
+                            minlength="2"
+                            required
+                            autofocus
+                        />
+
+                        <img src="./assets/icons/personal.svg" alt="" class="form__input-icon" />
+                        <img src="./assets/icons/form-error.svg" alt="Error" class="form__input-icon-error" />
+                    </div>
+                    <p class="form__error">Your name is not correct format</p>
+                </div>
+
+                <div class="form__group">
+                    <label for="email-address" class="form__label--medium">Email Address*</label>
+                    <div class="form__text-input">
+                        <input
+                            type="email"
+                            name="email-address"
+                            id="email-address"
+                            placeholder="Input your email"
+                            class="form__input"
+                            required
+                        />
+
+                        <img src="./assets/icons/message.svg" alt="" class="form__input-icon" />
+                        <img src="./assets/icons/form-error.svg" alt="Error" class="form__input-icon-error" />
+                    </div>
+                    <p class="form__error">Your Email is not correct format</p>
+                </div>
+
+                <div class="form__group">
+                    <label for="website" class="form__label--medium">Website*</label>
+                    <div class="form__text-input">
+                        <input
+                            type="text"
+                            name="website"
+                            id="website"
+                            placeholder="Input website"
+                            class="form__input"
+                            required
+                        />
+                    </div>
+                    <p class="form__error">Your Email is not correct format</p>
+                </div>
+            </div>
+
+            <div class="form__rating">
+                <p class="form__label--medium">Your rating</p>
+                <div class="form__rating-star">
+                    <img src="./assets/icons/star.svg" alt="" class="form__rating-icon" />
+                    <img src="./assets/icons/star.svg" alt="" class="form__rating-icon" />
+                    <img src="./assets/icons/star.svg" alt="" class="form__rating-icon" />
+                    <img src="./assets/icons/star.svg" alt="" class="form__rating-icon" />
+                    <img src="./assets/icons/star.svg" alt="" class="form__rating-icon" />
+                </div>
+            </div>
+
+            <div class="form__group">
+                <label for="review" class="form__label--medium">Write Review*</label>
+                <div class="form__text-area">
+                    <textarea
+                        name="review"
+                        id="review"
+                        placeholder="Your review"
+                        required
+                        class="form__text-area-input"
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="form__group">
+                <label class="product-review__checkbox form__checkbox">
+                    <input type="checkbox" name="" id="" class="form__checkbox-input d-none" />
+                    <span class="form__checkbox-label">
+                        Save my name, email, and website in this browser for the next time I comment.
+                    </span>
+                </label>
+            </div>
+        </form>
+
+        <button id="user-review" class="product-review__btn btn btn--primary">Submit</button>
+    </div>
+</div>

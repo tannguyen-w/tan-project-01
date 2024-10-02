@@ -501,15 +501,16 @@
         width: 470px;
 
         @include abstracts.screen(xl) {
-            width: 400px;
+            width: 100%;
         }
 
         @include abstracts.screen(md) {
             margin-top: 20px;
+            width: 300px;
         }
 
         @include abstracts.screen(sm) {
-            width: calc(100vw - 20px);
+            width: calc(100vw - 40px);
         }
     }
 
@@ -518,6 +519,10 @@
         font-weight: 500;
         line-height: 125%;
         text-transform: capitalize;
+
+        @include abstracts.screen(lg) {
+            font-size: 3.2rem;
+        }
     }
 
     &__desc {
@@ -525,6 +530,10 @@
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 162.5%;
+
+        @include abstracts.screen(lg) {
+            font-size: 1.4rem;
+        }
     }
 
     &__btn {

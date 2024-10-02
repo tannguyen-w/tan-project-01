@@ -87,3 +87,50 @@ h1 {
     font-weight: 700;
     line-height: 145.455%;
 }
+
+h2 {
+    font-size: 6.4rem;
+    font-weight: 500;
+    line-height: 115.625%;
+    text-transform: capitalize;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+tr {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 24px 0;
+    text-align: left;
+
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 155.556%;
+}
+
+tfoot td {
+    padding: 28px 0;
+}
+
+tbody td {
+    height: 100%;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+// tfoot tr td {
+//     padding: 0 40px;
+// }
