@@ -106,6 +106,74 @@
                 }
             }
         }
+
+        @include abstracts.screen(md) {
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                table-layout: auto;
+            }
+
+            thead {
+                display: none; /* Ẩn tiêu đề bảng trên mobile */
+            }
+
+            tbody,
+            tfoot,
+            tr,
+            td {
+                display: block; /* Hiển thị các hàng và cột dưới dạng block */
+                width: 100%;
+            }
+
+            tr {
+                // margin-bottom: 15px; /* Khoảng cách giữa các hàng */
+            }
+
+            td {
+                margin: 15px 0;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between; /* Căn đều hai đầu cho nhãn và nội dung */
+            }
+
+            td:before {
+                content: attr(data-label); /* Hiển thị nhãn từ thuộc tính data-label */
+                font-weight: bold;
+                text-align: left;
+                white-space: nowrap;
+
+                font-size: 1.8rem;
+                font-weight: 600;
+                line-height: 155.556%;
+
+                color: var(--white-color);
+            }
+
+            tfoot td {
+                width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng cho mobile */
+                display: block; /* Hiển thị block cho layout linh hoạt */
+                padding: 0 15px;
+            }
+        }
+
+        @include abstracts.screen(sm) {
+            .container {
+                overflow-x: auto; /* Cho phép cuộn ngang */
+            }
+
+            table {
+                width: 100%; /* Đặt chiều rộng bảng theo chiều rộng của container */
+                table-layout: auto; /* Đảm bảo bảng có thể thu nhỏ theo nội dung */
+            }
+
+            th,
+            td {
+                word-wrap: break-word; /* Cho phép nội dung tự xuống dòng */
+                white-space: nowrap; /* Ngăn không cho nội dung bị thu nhỏ quá mức */
+                padding: 10px 5px; /* Điều chỉnh padding để tối ưu không gian */
+            }
+        }
     }
 
     &-item {
@@ -260,73 +328,5 @@
             font-weight: 600;
             line-height: 162.5%;
         }
-    }
-}
-
-@include abstracts.screen(md) {
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        table-layout: auto;
-    }
-
-    thead {
-        display: none; /* Ẩn tiêu đề bảng trên mobile */
-    }
-
-    tbody,
-    tfoot,
-    tr,
-    td {
-        display: block; /* Hiển thị các hàng và cột dưới dạng block */
-        width: 100%;
-    }
-
-    tr {
-        // margin-bottom: 15px; /* Khoảng cách giữa các hàng */
-    }
-
-    td {
-        margin: 15px 0;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between; /* Căn đều hai đầu cho nhãn và nội dung */
-    }
-
-    td:before {
-        content: attr(data-label); /* Hiển thị nhãn từ thuộc tính data-label */
-        font-weight: bold;
-        text-align: left;
-        white-space: nowrap;
-
-        font-size: 1.8rem;
-        font-weight: 600;
-        line-height: 155.556%;
-
-        color: var(--white-color);
-    }
-
-    tfoot td {
-        width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng cho mobile */
-        display: block; /* Hiển thị block cho layout linh hoạt */
-        padding: 0 15px;
-    }
-}
-
-@include abstracts.screen(sm) {
-    .container {
-        overflow-x: auto; /* Cho phép cuộn ngang */
-    }
-
-    table {
-        width: 100%; /* Đặt chiều rộng bảng theo chiều rộng của container */
-        table-layout: auto; /* Đảm bảo bảng có thể thu nhỏ theo nội dung */
-    }
-
-    th,
-    td {
-        word-wrap: break-word; /* Cho phép nội dung tự xuống dòng */
-        white-space: nowrap; /* Ngăn không cho nội dung bị thu nhỏ quá mức */
-        padding: 10px 5px; /* Điều chỉnh padding để tối ưu không gian */
     }
 }

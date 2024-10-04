@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 *,
 ::before,
 ::after {
@@ -54,6 +56,21 @@ select {
 input,
 textarea {
     background: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-webkit-autofill:hover {
+    transition: background-color 1s 9999s;
+    -webkit-text-fill-color: var(--white-color);
+    caret-color: var(--white-color);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
 }
 
 i,
@@ -131,6 +148,34 @@ tbody td {
     vertical-align: middle;
 }
 
-// tfoot tr td {
-//     padding: 0 40px;
+// input[type="date"] {
+
+// }
+
+/* Ẩn icon mặc định cho input type="date" và type="time" */
+// input[type="date"]::-webkit-calendar-picker-indicator,
+// input[type="time"]::-webkit-calendar-picker-indicator {
+//     padding: 5px;
+//     width: 24px;
+//     height: 24px;
+//     background-color: #fff;
+// }
+
+/* Firefox (ẩn icon mặc định của date và time) */
+input[type="date"],
+input[type="time"] {
+    -moz-appearance: textfield; /* Chuyển về dạng text để ẩn biểu tượng */
+}
+
+/* Các trình duyệt Webkit (Chrome, Safari) */
+input[type="date"],
+input[type="time"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+// input[type="date"] {
+//     -webkit-appearance: none; /* Ẩn kiểu mặc định trên Webkit */
+//     -moz-appearance: none; /* Ẩn kiểu mặc định trên Firefox */
+//     appearance: none; /* Ẩn kiểu mặc định trên tất cả trình duyệt */
 // }

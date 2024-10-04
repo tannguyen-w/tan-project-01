@@ -281,3 +281,16 @@ function handleProductDetailButtonClick() {
 window.addEventListener("template-loaded", handleProductDetailButtonClick);
 
 handleProductDetailButtonClick();
+
+// // Kiểm tra sự sẵn sàng của tài liệu HTML trước khi chạy mã JavaScript
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Khi mousedown vào icon lịch, click vào input date
+//     document.getElementById("date-icon").addEventListener("click", function () {
+//         document.getElementById("date-input").click(); // Kích hoạt ô chọn ngày
+//     });
+
+//     // Khi mousedown vào icon đồng hồ, click vào input time
+//     document.getElementById("time-icon").addEventListener("click", function () {
+//         document.getElementById("time-input").click(); // Kích hoạt ô chọn thời gian
+//     });
+// });

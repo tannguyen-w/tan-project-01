@@ -93,11 +93,6 @@
             load("#product-detail", "./template/product-detail.html");
         </script>
 
-        <div id="product-review" class="product-review"></div>
-        <script>
-            load("#product-review", "./template/product-review.html");
-        </script>
-
         <div id="cart-ordered" class="cart-ordered"></div>
         <script>
             load("#cart-ordered", "./template/cart-ordered.html");
@@ -108,11 +103,21 @@
             load("#cart-total", "./template/cart-total.html");
         </script>
 
+        <div id="order-01" class="order-01"></div>
+        <script>
+            load("#order-01", "./template/order-01.html");
+        </script>
+
         <!-- Main -->
-        <main></main>
+        <main>
+            <div id="checkout" class="checkout"></div>
+            <script>
+                load("#checkout", "./checkout.html");
+            </script>
+        </main>
 
         <!-- Footer -->
-        <footer id="footer"></footer>
+        <footer id="footer" class="footer"></footer>
         <script>
             load("#footer", "./template/footer.html");
         </script>

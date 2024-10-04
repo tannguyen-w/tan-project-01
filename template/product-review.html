@@ -3,7 +3,7 @@
         <h3 class="product-review__title">Add A Review</h3>
         <p class="product-review__desc">Your email address will not be published. Required fields are marked *</p>
 
-        <form action="user-review" class="form">
+        <form action="" class="form">
             <div class="form__row">
                 <div class="form__group">
                     <label for="username" class="form__label--medium">Your name*</label>
@@ -15,6 +15,7 @@
                             placeholder="Input your name"
                             class="form__input"
                             minlength="2"
+                            pattern="\S+.*"
                             required
                             autofocus
                         />
@@ -35,6 +36,7 @@
                             placeholder="Input your email"
                             class="form__input"
                             required
+                            pattern="\S+.*"
                         />
 
                         <img src="./assets/icons/message.svg" alt="" class="form__input-icon" />
@@ -52,6 +54,7 @@
                             id="website"
                             placeholder="Input website"
                             class="form__input"
+                            pattern="\S+.*"
                             required
                         />
                     </div>
@@ -79,6 +82,7 @@
                         placeholder="Your review"
                         required
                         class="form__text-area-input"
+                        pattern="\S+.*"
                     ></textarea>
                 </div>
             </div>
@@ -93,6 +97,6 @@
             </div>
         </form>
 
-        <button id="user-review" class="product-review__btn btn btn--primary">Submit</button>
+        <button type="submit" id="user-review" class="product-review__btn btn btn--primary">Submit</button>
     </div>
 </div>

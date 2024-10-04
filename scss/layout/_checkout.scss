@@ -1,0 +1,98 @@
+@use "../abstracts";
+
+.checkout {
+    margin: 50px 0;
+
+    &-bill {
+        width: 570px;
+
+        @include abstracts.screen(xl) {
+            width: 100%;
+        }
+
+        &__heading {
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 133.333%;
+        }
+
+        &-form {
+            margin-top: 28px;
+
+            &__group {
+                display: flex;
+                flex-direction: column;
+                margin-top: 24px;
+            }
+
+            &__title {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 162.5%;
+            }
+
+            &__input {
+                height: 30px;
+                padding: 5px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 162.5%;
+
+                &:focus {
+                    border-color: var(--white-color);
+                }
+
+                &:focus &__title {
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        &__btn {
+            margin-top: 36px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--white-color);
+            font-weight: 600;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    &-order {
+        padding: 28px;
+        border: 1px solid #4b4b4e;
+        background: #18181b;
+
+        @include abstracts.screen(lg) {
+            margin-top: 80px;
+        }
+
+        &__heading {
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 133.333%;
+        }
+
+        & table,
+        thead,
+        tbody,
+        tr {
+            border: none;
+        }
+
+        & tbody td {
+            padding: 24px 0;
+            border-top: 1px solid #4b4b4e;
+
+            @include abstracts.screen(sm) {
+                width: 160px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
