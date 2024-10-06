@@ -21,13 +21,12 @@
 }
 
 .navbar {
-    padding: 30px 0;
-
     &__left {
         display: flex;
     }
 
     &__content {
+        padding: 30px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
