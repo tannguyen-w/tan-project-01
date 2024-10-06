@@ -26,18 +26,113 @@
         <script src="./assets/js/scripts.js"></script>
     </head>
     <body>
-        <!-- Header -->
-        <header id="header"></header>
-        <script>
-            load("#header", "./template/header.html");
-        </script>
-        <!-- Main -->
-        <h1>Sign in</h1>
+        <main class="auth">
+            <!-- Auth intro -->
+            <div class="auth__intro">
+                <!-- Logo -->
+                <a href="./index.html" class="auth__intro-logo logo d-none d-md-flex">
+                    <img src="./assets/icons/logo.svg" alt="Quán nhậu Tự do" class="icon logo__img" />
+                    <h1 class="logo__title">Nhà hàng Tự Do</h1>
+                </a>
 
-        <!-- Footer -->
-        <footer id="footer"></footer>
+                <img src="./assets/images/auth/intro.svg" alt="" class="auth__intro-img" />
+                <p class="auth__intro--text">
+                    The best of luxury brand values, high quality products, and innovative services
+                </p>
+
+                <button class="auth__intro-next d-none d-md-flex js-toggle" toggle-target="#auth__content">
+                    <img src="./assets/images/auth/intro-arrow.svg" alt="" />
+                </button>
+            </div>
+
+            <!-- Auth content -->
+            <div id="auth__content" class="auth__content hide">
+                <div class="auth__content-inner">
+                    <!-- Logo -->
+                    <a href="./index.html" class="auth__content-logo logo">
+                        <img src="./assets/icons/logo.svg" alt="Nhà hàng Tự do" class="icon logo__img" />
+                        <h2 class="auth__title--heading logo__title">Tự Do</h2>
+                    </a>
+                    <h1 class="auth__heading">Sign up</h1>
+                    <p class="auth__desc">Let’s create your account and Shop like a pro and save money.</p>
+                    <form action="./index-logined.html" class="form auth__form">
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="email"
+                                    name=""
+                                    placeholder="Email"
+                                    id=""
+                                    class="form__input"
+                                    required
+                                    autofocus
+                                />
+                                <img src="./assets/icons/message.svg" alt="" class="form__input-icon" />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                            </div>
+                            <p class="form__error">Email chưa đúng định dạng</p>
+                        </div>
+
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="password"
+                                    name=""
+                                    placeholder="Password"
+                                    id=""
+                                    minlength="6"
+                                    class="form__input"
+                                    required
+                                />
+                                <img src="./assets/icons/lock.svg" alt="" class="form__input-icon" />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="password"
+                                    name=""
+                                    placeholder="Confirm password"
+                                    id=""
+                                    class="form__input"
+                                    required
+                                    minlength="6"
+                                />
+                                <img src="./assets/icons/lock.svg" alt="" class="form__input-icon" />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                            </div>
+                        </div>
+
+                        <div class="form__group form__group--inline">
+                            <label class="form__checkbox">
+                                <input type="checkbox" name="" id="" class="checkbox__input d-none" />
+                                <span class="form__checkbox-label">Set as default card</span>
+                            </label>
+
+                            <a href="./reset-password.html" class="auth__link form__pull-right">Forgot Password?</a>
+                        </div>
+
+                        <div class="form__group auth__btn-group">
+                            <button class="btn auth__btn form__submit-btn">Sign Up</button>
+                            <button class="btn auth__btn">
+                                <img src="./assets/icons/google.svg" alt="" />
+                                Sign in with Google
+                            </button>
+                        </div>
+                    </form>
+
+                    <p class="auth__text">
+                        You have an account yet?
+                        <a href="./sign-in.html" class="auth__link auth__text-link">Sign In</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
         <script>
-            load("#footer", "./template/footer.html");
+            window.dispatchEvent(new Event("template-loaded"));
         </script>
     </body>
 </html>

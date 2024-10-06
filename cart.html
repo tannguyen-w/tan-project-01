@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quán Nhậu Tự Do</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo-web/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo-web/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo-web/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/logo-web/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/butler/stylesheet.css" />
+        <link rel="stylesheet" href="./assets/fonts/plus-jakarta-sans/stylesheet.css" />
+        <link rel="stylesheet" href="./assets/fonts/playball/stylesheet.css" />
+        <link rel="stylesheet" href="./assets/fonts/libre-bodoni/stylesheet.css" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="navbar-logined" class="navbar-logined"></div>
+        <script>
+            load("#navbar-logined", "./template/navbar-logined.html");
+        </script>
+
+        <!-- Main -->
+        <main>
+            <div id="cart-ordered" class="cart-ordered"></div>
+            <script>
+                load("#cart-ordered", "./template/cart-ordered.html");
+            </script>
+
+            <div id="cart-total" class="cart-total"></div>
+            <script>
+                load("#cart-total", "./template/cart-total.html");
+            </script>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </body>
+</html>

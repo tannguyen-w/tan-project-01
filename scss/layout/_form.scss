@@ -27,6 +27,30 @@ $error-color: #ed4337;
         }
     }
 
+    &__group {
+        margin-top: 30px;
+
+        @include abstracts.screen(md) {
+            margin-top: 20px;
+        }
+
+        &--inline {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 10px;
+            justify-content: space-between;
+
+            @include abstracts.screen(md) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__text-input {
+        border-radius: 10px;
+        border: 1px solid #b9babe;
+    }
+
     &__group:has(:invalid):has(&__input:not(:placeholder-shown)) {
         .form__text-input {
             border-color: $error-color;
@@ -50,7 +74,7 @@ $error-color: #ed4337;
 
         padding: 0 12px;
         border-radius: 10px;
-        border: 1px solid var(--form-border-color);
+        border: 1px solid #b9babe;
 
         &:focus-within {
             border: 2px solid var(--primary-color);
@@ -95,7 +119,7 @@ $error-color: #ed4337;
         line-height: 144.444%;
 
         &::placeholder {
-            color: var(--form-border-color);
+            color: var(--white-8-color);
         }
 
         @include abstracts.screen(md) {

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quán Nhậu Tự Do</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo-web/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo-web/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo-web/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/logo-web/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/butler/stylesheet.css" />
+        <link rel="stylesheet" href="./assets/fonts/plus-jakarta-sans/stylesheet.css" />
+        <link rel="stylesheet" href="./assets/fonts/playball/stylesheet.css" />
+        <link rel="stylesheet" href="./assets/fonts/libre-bodoni/stylesheet.css" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="navbar" class="navbar"></div>
+        <script>
+            load("#navbar", "./template/navbar.html");
+        </script>
+
+        <!-- Main -->
+        <main>
+            <div id="menu-breakfast" class="menu-breakfast"></div>
+            <script>
+                load("#menu-breakfast", "./template/menu-breakfast.html");
+            </script>
+
+            <div id="order-02" class="order-02"></div>
+            <script>
+                load("#order-02", "./template/order-02.html");
+            </script>
+
+            <div id="menu-lunch" class="menu-lunch"></div>
+            <script>
+                load("#menu-lunch", "./template/menu-lunch.html");
+            </script>
+
+            <div id="menu-dinner" class="menu-dinner"></div>
+            <script>
+                load("#menu-dinner", "./template/menu-dinner.html");
+            </script>
+
+            <div id="menu-starters" class="menu-starters"></div>
+            <script>
+                load("#menu-starters", "./template/menu-starters.html");
+            </script>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </body>
+</html>

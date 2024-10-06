@@ -1,7 +1,16 @@
 @use "../abstracts";
 
 .footer {
-    margin: 50px 0;
+    margin-top: 150px;
+
+    @include abstracts.screen(lg) {
+        margin-top: 120px;
+    }
+
+    @include abstracts.screen(md) {
+        margin-top: 70px;
+    }
+
     &__row {
         display: grid;
         grid-template-columns: 2.8fr 1.3fr 2fr 1fr 1.8fr;

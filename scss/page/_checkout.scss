@@ -4,7 +4,7 @@
     margin: 50px 0;
 
     &-bill {
-        width: 570px;
+        width: min(570px, 100%);
 
         @include abstracts.screen(xl) {
             width: 100%;
@@ -51,11 +51,17 @@
         }
 
         &__btn {
+            font-size: 2.4rem;
             margin-top: 36px;
             margin-left: auto;
             margin-right: auto;
-            color: var(--white-color);
+            width: 100%;
+
+            padding: 10px 0;
             font-weight: 600;
+
+            color: var(--white-color);
+            background: var(--primary-color);
 
             &:hover {
                 opacity: 0.8;

@@ -46,7 +46,7 @@
         }
 
         @include abstracts.screen(xl) {
-            margin-left: 200px;
+            margin-left: 160px;
         }
 
         @include abstracts.screen(lg) {
@@ -77,6 +77,10 @@
         display: flex;
         align-items: center;
         gap: 30px;
+
+        @include abstracts.screen(xl) {
+            gap: 25px;
+        }
 
         @include abstracts.screen(lg) {
             font-size: 2.4rem;
@@ -223,6 +227,21 @@
 
     &__arrow {
         right: 15px !important;
+    }
+
+    &__btn {
+        width: 120px !important;
+        font-size: 1.8rem;
+        color: var(--white-color);
+    }
+
+    &__sign-up {
+        background: var(--primary-color);
+        border-radius: 10px;
+
+        &:hover {
+            opacity: 0.9;
+        }
     }
 }
 
