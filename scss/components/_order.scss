@@ -467,6 +467,7 @@
 }
 
 .order-06 {
+    position: relative;
     margin-top: 150px;
 
     @include abstracts.screen(lg) {
@@ -636,7 +637,7 @@
     &__icon {
         position: absolute;
         top: -60px;
-        right: -60px;
+        right: 0;
     }
 }
 

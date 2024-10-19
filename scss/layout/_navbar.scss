@@ -179,6 +179,52 @@
         box-shadow: 0px 40px 90px 20px var(--navbar-act-dropdown-shadow);
     }
 
+    &-cart__inner {
+        right: -60px;
+    }
+
+    &-cart__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-cart__arrow {
+        right: 66px !important;
+    }
+
+    &-cart__title {
+        font-size: 1.8rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    &-cart__link {
+        color: #0071dc;
+    }
+
+    &__list {
+        margin-top: 20px;
+        max-height: 300px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            background-color: #171c28;
+        }
+
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #2f3441;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #171c28;
+        }
+    }
+
     &__arrow {
         position: absolute;
         top: -15px;
@@ -192,7 +238,9 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+    gap: 20px;
 
+    &__btn-wrap,
     &__user {
         position: relative;
 
@@ -200,6 +248,27 @@
             display: block;
             z-index: 1;
         }
+    }
+
+    &__cart {
+        width: 50px;
+        position: relative;
+        padding: 10px 5px;
+    }
+
+    &__icon-buy {
+        width: 32px;
+    }
+
+    &__quantity {
+        position: absolute;
+        top: 0;
+        padding: 3px 5px;
+        border-radius: 50%;
+        background: var(--primary-color);
+
+        line-height: 1;
+        font-size: 1.2rem;
     }
 
     &__username {

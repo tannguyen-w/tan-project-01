@@ -18,7 +18,7 @@
 
             <ul class="navbar__list">
                 <li class="navbar__item"><a href="./" class="navbar__link">Home</a></li>
-                <li class="navbar__item"><a href="/menu.html" class="navbar__link">Menu</a></li>
+                <li class="navbar__item"><a href="./menu.html" class="navbar__link">Menu</a></li>
                 <li class="navbar__item"><a href="#!" class="navbar__link">Blog</a></li>
                 <li class="navbar__item"><a href="#!" class="navbar__link">Pages</a></li>
                 <li class="navbar__item"><a href="#!" class="navbar__link">Contact</a></li>
@@ -28,9 +28,115 @@
         <div class="navbar__overlay js-toggle" toggle-target="#navbar__main"></div>
         <!-- Actions -->
         <div class="top-act">
+            <div class="top-act__btn-wrap">
+                <button class="top-act__cart">
+                    <img src="./assets/icons/buy.svg" alt="Buy" class="top-act__icon-buy top-act__icon icon" />
+                    <span class="top-act__quantity">2</span>
+                </button>
+
+                <!-- Dropdown -->
+                <div class="act-dropdown top-act__dropdown">
+                    <div class="act-dropdown__inner act-dropdown-cart__inner">
+                        <img
+                            src="./assets/icons/arrow-up.png"
+                            alt=""
+                            class="act-dropdown__arrow act-dropdown-cart__arrow"
+                        />
+                        <div class="act-dropdown-cart__top">
+                            <h4 class="act-dropdown__title act-dropdown-cart__title">You have 3 item(s)</h4>
+                            <a href="./cart.html" class="act-dropdown-cart__link">See All</a>
+                        </div>
+
+                        <div class="act-dropdown__list">
+                            <!-- Cart item 1 -->
+                            <article class="cart-preview-item">
+                                <img src="./assets/images/menu/menu-all-01.png" alt="" class="cart-preview-item__img" />
+                                <div class="cart-preview-item__content">
+                                    <h4 class="cart-preview-item__title">New Lubina Marinada</h4>
+                                    <div class="cart-preview-item__price">
+                                        <span class="cart-preview-item__quantity">1 x </span>
+                                        <span class="cart-preview-item__unit-price">200.000 đ</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Cart item 2 -->
+                            <article class="cart-preview-item">
+                                <img src="./assets/images/menu/menu-all-01.png" alt="" class="cart-preview-item__img" />
+                                <div class="cart-preview-item__content">
+                                    <h4 class="cart-preview-item__title">New Lubina Marinada</h4>
+                                    <div class="cart-preview-item__price">
+                                        <span class="cart-preview-item__quantity">1 x </span>
+                                        <span class="cart-preview-item__unit-price">200.000 đ</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Cart item 3 -->
+                            <article class="cart-preview-item">
+                                <img src="./assets/images/menu/menu-all-01.png" alt="" class="cart-preview-item__img" />
+                                <div class="cart-preview-item__content">
+                                    <h4 class="cart-preview-item__title">New Lubina Marinada</h4>
+                                    <div class="cart-preview-item__price">
+                                        <span class="cart-preview-item__quantity">1 x </span>
+                                        <span class="cart-preview-item__unit-price">200.000 đ</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Cart item 1 -->
+                            <article class="cart-preview-item">
+                                <img src="./assets/images/menu/menu-all-01.png" alt="" class="cart-preview-item__img" />
+                                <div class="cart-preview-item__content">
+                                    <h4 class="cart-preview-item__title">New Lubina Marinada</h4>
+                                    <div class="cart-preview-item__price">
+                                        <span class="cart-preview-item__quantity">1 x </span>
+                                        <span class="cart-preview-item__unit-price">200.000 đ</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Cart item 2 -->
+                            <article class="cart-preview-item">
+                                <img src="./assets/images/menu/menu-all-01.png" alt="" class="cart-preview-item__img" />
+                                <div class="cart-preview-item__content">
+                                    <h4 class="cart-preview-item__title">New Lubina Marinada</h4>
+                                    <div class="cart-preview-item__price">
+                                        <span class="cart-preview-item__quantity">1 x </span>
+                                        <span class="cart-preview-item__unit-price">200.000 đ</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Cart item 3 -->
+                            <article class="cart-preview-item">
+                                <img src="./assets/images/menu/menu-all-01.png" alt="" class="cart-preview-item__img" />
+                                <div class="cart-preview-item__content">
+                                    <h4 class="cart-preview-item__title">New Lubina Marinada</h4>
+                                    <div class="cart-preview-item__price">
+                                        <span class="cart-preview-item__quantity">1 x </span>
+                                        <span class="cart-preview-item__unit-price">200.000 đ</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="cart-sub user-menu__separate">
+                            <div class="cart-sub__total">
+                                <p class="cart-sub__title">Tổng cộng:</p>
+                                <p class="cart-sub__price">1.582.000 <u>đ</u></p>
+                            </div>
+                            <div class="cart-sub__act">
+                                <a href="./checkout.html" class="cart-sub__act--link cart-sub__payment">Thanh toán</a>
+                                <a href="./cart.html" class="cart-sub__act--link cart-sub__detail">Giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="top-act__user">
                 <div class="top-act__username">
-                    <span class="top-acr__username d-none d-lg-block d-sm-none">Imran Khan</span>
                     <img src="./assets/images/avatar.jpg" alt="Avatar" class="top-act__avatar" />
                 </div>
 
@@ -49,7 +155,7 @@
 
                         <ul class="user-menu__list">
                             <li>
-                                <a href="#!" class="user-menu__link">
+                                <a href="./profile.html" class="user-menu__link">
                                     <img src="./assets/icons/user.svg" alt="" class="icon user-menu__icon" />
                                     Profile
                                 </a>

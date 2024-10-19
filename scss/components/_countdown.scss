@@ -271,3 +271,28 @@
         }
     }
 }
+
+.countdown-05 {
+    &__inner {
+        height: 100%;
+        padding: 40px 0;
+    }
+    &__item {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 125%;
+        text-transform: capitalize;
+    }
+
+    &__desc {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        margin-top: 10px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 155.556%;
+    }
+}
